@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/tabLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+    <title>Mundo da Fantasia</title>
+
+    <script src="/scripts/formHandler.js" defer></script>
+    <script src="/scripts/showForm.js" defer></script>
+    <script src="/scripts/mainSlider.js" defer></script>
+    <script src="/scripts/sportSlider.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="#"><img src="./assets/Logo.png" alt="Mundo da Fantasia" id="logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#segments">Segmentos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="slider-container">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img id="slide-1" src="./assets/BannerEspaco.png" class="slide active">
+                    <img id="slide-2" src="./assets/BannerSedes.png" class="slide">
+                    <img id="slide-3" src="./assets/BannerTema-1.png" class="slide">
+                </div>
+
+                <div class="slider-nav">
+                    <a href="#slide-1" data-slide="slide-1" class="slide-anchor active"></a>
+                    <a href="#slide-2" data-slide="slide-2" class="slide-anchor"></a>
+                    <a href="#slide-3" data-slide="slide-3" class="slide-anchor"></a>
+                </div>
+            </div>
+            <button class="open-form-btn" id="show-form">Faça a matricula</button>
+        </div>
+        <div class="segments" id="segments">
+            <h2>SEGMENTOS</h2>
+            <div class="segments-wrapper">
+                <div class="segment">
+                    <img src="./assets/BannerBercario.png" alt="">
+                    <h3>BERÇÁRIO</h3>
+                </div>
+                <div class="segment">
+                    <img src="./assets/BannerInfantil.png" alt="">
+                    <h3>EDUCAÇÃO INFANTIL</h3>
+                </div>
+                <div class="segment">
+                    <img src="./assets/BannerFund.png" alt="">
+                    <h3>ENSINO FUNDAMENTAL</h3>
+                </div>
+            </div>
+        </div>
+        <div id="form-container" class="form-container hidden">
+            <h2>Formulario fica aqui</h2>
+            <form id="form" class="form">
+                <div class="text-info">
+                    <label for="name">Nome:</label>
+                    <input id="name" type="text" placeholder="Informe seu nome">
+                </div>
+                <div class="text-info">
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" placeholder="Digite seu email">
+                </div>
+                <div class="text-info">
+                    <label for="contact-number">Telefone</label>
+                    <input id="contact-number" data-mask="(00) 00000-0000" type="text" placeholder="Telefone para contato">
+                </div>
+                <!-- <fieldset>
+                    <legend>Tem mais de um filho?</legend>
+                    <div>
+                        <input id="radio-1" type="radio" name="children" value="more-than-one">
+                        <label for="radio-1">Sim</label>
+                    </div>
+                    <div>
+                        <input id="radio-0" type="radio" checked name="children" value="single-child">
+                        <label for="radio-0">Não</label>
+                    </div>
+                </fieldset> -->
+                <div id="select-container"></div>
+                <button type="button" id="add-select">Mais uma matrícula</button>
+                <button id="sub-form" type="submit">Concluir</button>
+            </form>
+        </div>
+        <section class="mission-section">
+            <div class="mission-container">
+                <div class="mission-img-container mission-wrapper">
+                    <img class="mission-img" src="./assets/NossaMissao.png" alt="">
+                </div>
+                <div class="mission-wrapper mission-description">
+                    <h3>Nossa Missão</h3>
+                    <p>Bem-vindo ao Mundo da Fantasia, onde cada criança embarca em uma jornada mágica de aprendizado e descobertas. Na nossa creche-escola, promovemos um ambiente integrado e participativo, onde os pequenos exploradores são incentivados a desenvolver sua criatividade, curiosidade e habilidades sociais. Preparamos o caminho para um futuro brilhante, onde cada criança se torna um cidadão consciente, pronto para enfrentar o mundo real com imaginação e confiança. </p>
+                    <span>Conheça mais sobre nosso mundo:</span>
+                    <a href="">
+                        <span>VEJA MAIS</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="sports-slider">
+            <div class="slider-wrapper">
+                <div class="sport-slider">
+                    <img id="sport-1" src="./assets/BannerKarate.png" class="sport-slide active">
+                    <img id="sport-2" src="./assets/BannerBallet.png" class="sport-slide">
+                </div>
+
+                <div class="slider-nav">
+                    <a href="#sport-1" data-slide="sport-1" class="sport-anchor active"></a>
+                    <a href="#sport-2" data-slide="sport-2" class="sport-anchor"></a>
+                </div>
+            </div>
+        </div>
+        <section class="more-sports">
+            <h2>Mais Modalidades</h2>
+            <div class="sports-container">
+                <div class="sport">
+                    <img src="./assets/natacao.png" alt="">
+                    <h3>Natação</h3>
+                </div>
+                <div class="sport">
+                    <img src="./assets/ballet.png" alt="">
+                    <h3>Ballet</h3>
+                </div>
+                <div class="sport">
+                    <img src="./assets/futebol.png" alt="">
+                    <h3>Futebol</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h2 id="contato">Nossos Contatos</h3>
+        <div class="contact-container">
+            <div class="contact">
+                <h4>Cemf Aldeota</h4>
+                <ul>
+                    <li>Fixo: 3253-0044</li>
+                    <li>Coord. Pedagógica: (85) 98611-9760</li>
+                    <li>Financeiro: (85) 98611-9760</li>
+                    <li>coordenacaosa@cemundodafantasia.com.br</li>
+                    <li>administracaosa@cemundodafantasia.com.br</li>
+                </ul>
+                <div>
+                    <p>Direção geral:</p>
+                    <p>direcao@cemundodafantasia.com.br</p>
+                </div>
+            </div>
+            <div class="contact">
+                <h4>Cemf Dunas</h4>
+                <ul>
+                    <li>Fixo: 3262-0144</li>
+                    <li>Coord. Pedagógica: (85) 98883-0144</li>
+                    <li>Financeiro: (85) 99153-1437</li>
+                    <li>coordenacaosd@cemundodafantasia.com.br</li>
+                </ul>
+                <div>
+                    <p>Curriculuns:</p>
+                    <p>direcao@cemundodafantasia.com.br</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules//jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+
+</body>
+</html>
