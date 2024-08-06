@@ -11,6 +11,7 @@
     <script src="./scripts/showForm.js" defer></script>
     <script src="./scripts/mainSlider.js" defer></script>
     <script src="./scripts/sportSlider.js" defer></script>
+    <script src="./scripts/showSportCard.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -74,17 +75,6 @@
                     <label for="contact-number">Telefone</label>
                     <input id="contact-number" data-mask="(00) 00000-0000" type="text" placeholder="Telefone para contato">
                 </div>
-                <!-- <fieldset>
-                    <legend>Tem mais de um filho?</legend>
-                    <div>
-                        <input id="radio-1" type="radio" name="children" value="more-than-one">
-                        <label for="radio-1">Sim</label>
-                    </div>
-                    <div>
-                        <input id="radio-0" type="radio" checked name="children" value="single-child">
-                        <label for="radio-0">Não</label>
-                    </div>
-                </fieldset> -->
                 <div id="select-container"></div>
                 <button type="button" id="add-select">Mais uma matrícula</button>
                 <button id="sub-form" type="submit">Concluir</button>
@@ -121,21 +111,27 @@
         <section class="more-sports">
             <h2>Mais Modalidades</h2>
             <div class="sports-container">
-                <div class="sport">
+                <div class="sport" id="swimming">
                     <img src="./assets/natacao.png" alt="">
                     <h3>Natação</h3>
+                    <p class="btn-more" id="swim-description">Saiba mais</p>
                 </div>
-                <div class="sport">
+
+                <div class="sport" id="ballet">
                     <img src="./assets/ballet.png" alt="">
-                    <h3>Ballet</h3>
+                    <h3>Ballet/Jazz</h3>
+                    <p class="btn-more" id="ballet-description">Saiba mais</p>
                 </div>
-                <div class="sport">
+
+                <div class="sport" id="soccer">
                     <img src="./assets/futebol.png" alt="">
                     <h3>Futebol</h3>
+                    <p class="btn-more" id="soccer-description">Saiba mais</p>
                 </div>
             </div>
         </section>
     </main>
+    
     <footer class="footer">
         <h2 id="contato">Nossos Contatos</h3>
         <div class="contact-container">
