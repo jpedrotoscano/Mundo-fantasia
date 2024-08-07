@@ -7,7 +7,7 @@ swimming.addEventListener("mouseover", () => {
         const description = document.getElementById("swim-description")
         description.textContent = "Bem-vindos à nossa escolinha de natação, onde a segurança, o desenvolvimento integral e a metodologia lúdica se unem para ensinar crianças a nadar. Com infraestrutura de qualidade e instrutores qualificados, oferecemos uma experiência divertida e educativa. Venha nos conhecer!"
         description.classList.add("sport-over")
-        description.classList.remove("btn-more")
+        swimming.classList.remove("btn-more")
         swimming.appendChild(description)
 
         requestAnimationFrame(() => {
@@ -21,7 +21,7 @@ ballet.addEventListener("mouseover", () => {
         const balletDescription = document.getElementById("ballet-description")
         balletDescription.textContent = "Nossa escolinha de ballet oferece aulas encantadoras para crianças, com professores experientes e um ambiente acolhedor. Promovemos desenvolvimento físico, disciplina e expressão artística. Venha descobrir a magia do ballet com a gente!"
         balletDescription.classList.add("sport-over")
-        balletDescription.classList.remove("btn-more")
+        ballet.classList.remove("btn-more")
         ballet.appendChild(balletDescription)
 
         requestAnimationFrame(() => {
@@ -35,7 +35,7 @@ soccer.addEventListener("mouseover", () => {
         const soccerDescription = document.getElementById("soccer-description")
         soccerDescription.textContent = "Nossa escolinha de futebol proporciona aulas divertidas e educativas para crianças, com técnicos qualificados. Focamos no desenvolvimento físico, trabalho em equipe e habilidades esportivas. Venha jogar e aprender conosco!"
         soccerDescription.classList.add("sport-over")
-        soccerDescription.classList.remove("btn-more")
+        soccer.classList.remove("btn-more")
         soccer.appendChild(soccerDescription)
 
         requestAnimationFrame(() => {

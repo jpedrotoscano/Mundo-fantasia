@@ -60,26 +60,6 @@
                 </div>
             </div>
         </div>
-        <div id="form-container" class="form-container hidden">
-            <h2>Formulario fica aqui</h2>
-            <form id="form" class="form">
-                <div class="text-info">
-                    <label for="name">Nome:</label>
-                    <input id="name" type="text" placeholder="Informe seu nome">
-                </div>
-                <div class="text-info">
-                    <label for="email">Email:</label>
-                    <input id="email" type="email" placeholder="Digite seu email">
-                </div>
-                <div class="text-info">
-                    <label for="contact-number">Telefone</label>
-                    <input id="contact-number" data-mask="(00) 00000-0000" type="text" placeholder="Telefone para contato">
-                </div>
-                <div id="select-container"></div>
-                <button type="button" id="add-select">Mais uma matrícula</button>
-                <button id="sub-form" type="submit">Concluir</button>
-            </form>
-        </div>
         <section class="mission-section">
             <div class="mission-container">
                 <div class="mission-img-container mission-wrapper">
@@ -111,27 +91,52 @@
         <section class="more-sports">
             <h2>Mais Modalidades</h2>
             <div class="sports-container">
-                <div class="sport" id="swimming">
+                <div class="sport">
                     <img src="./assets/natacao.png" alt="">
                     <h3>Natação</h3>
-                    <p class="btn-more" id="swim-description">Saiba mais</p>
+                    <div id="swimming" class="btn-more">
+                        <p  id="swim-description">Saiba mais</p>
+                    </div>
                 </div>
-
-                <div class="sport" id="ballet">
+                
+                <div class="sport">
                     <img src="./assets/ballet.png" alt="">
                     <h3>Ballet/Jazz</h3>
-                    <p class="btn-more" id="ballet-description">Saiba mais</p>
+                    <div id="ballet" class="btn-more">
+                        <p id="ballet-description">Saiba mais</p>
+                    </div>
                 </div>
 
-                <div class="sport" id="soccer">
+                <div class="sport" >
                     <img src="./assets/futebol.png" alt="">
                     <h3>Futebol</h3>
-                    <p class="btn-more" id="soccer-description">Saiba mais</p>
+                    <div id="soccer" class="btn-more">
+                        <p id="soccer-description">Saiba mais</p>
+                    </div>
                 </div>
             </div>
         </section>
+        <dialog id="form-container" class="form-container">
+            <form id="form" class="form">
+                <div class="text-info">
+                    <label for="name">Nome:</label>
+                    <input id="name" type="text" placeholder="Informe seu nome">
+                </div>
+                <div class="text-info">
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" placeholder="Digite seu email">
+                </div>
+                <div class="text-info">
+                    <label for="contact-number">Telefone</label>
+                    <input id="contact-number" data-mask="(00) 00000-0000" type="text" placeholder="Telefone para contato">
+                </div>
+                <div id="select-container"></div>
+                <button type="button" id="add-select">Mais uma matrícula</button>
+                <button id="sub-form" type="button">Concluir</button>
+            </form>
+        </dialog>
     </main>
-    
+
     <footer class="footer">
         <h2 id="contato">Nossos Contatos</h3>
         <div class="contact-container">
