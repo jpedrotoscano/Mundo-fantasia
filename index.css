@@ -324,7 +324,7 @@ body {
 .mission-wrapper p {
     max-width: 468px;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     color: #044E96;
 }
 
@@ -341,9 +341,9 @@ body {
     color: #fff;
     text-align: center;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
     border-radius: 6px;
-    border: 2px solid #044E96;
+    border: 3px solid #044E96;
 }
 
 .mission-wrapper a:hover
@@ -402,49 +402,89 @@ body {
 .sports-container .sport h3 {
     font-size: 20px;
     font-weight: 600;
-    color: #044E96
+    color: #044E96;
 }
 
 .sport-over {
     opacity: 0;
     transition: opacity .3s ease-in;
+    font-weight: 500;
 }
+
+
 
 .sport .btn-more {
     width: 40%;
     margin-top: 20px;
     padding: 12px;
-    background: #fff;
+    background: #044E96;
     border-radius: 15px;
-    border: 3px solid #044E96;
+    /* border: 3px solid #044E96; */
 }
 
-/* .sport div .btn-more {
-    width: 40%;
-    margin-top: 20px;
-    padding: 12px;
-    background: #fff;
-    border-radius: 15px;
-    border: 3px solid #044E96;
-} */
+.sport .btn-more > p {
+    color: #F4F4F4;
+    font-weight: 600;
+}
 
 .visible {
     opacity: 1;
 }
+
 .footer {
     width: 100vw;
-    background-color: #8AD3E7;
-    padding: 24px 0;
+    background-color: #044E96;
+    padding: 36px 0;
     margin-top: 40px;
 }
 
-.footer h2 {
-    color: #044E96;
-    text-align: center;
-    font-size: 40px;
+.contact-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
 }
 
-.contact-container {
+.contact h4 {
+    font-size: 20px;
+    color: #F4FAFA;
+}
+
+.contact .contact-info {
+    padding: 12px 0 12px 12px;
+}
+
+.contact-info ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-info ul li {
+    font-size: 14px;
+    color: #F4F4F4;
+    font-weight: 600;
+}
+
+.contact .more-info h4 + p {
+    padding: 8px 0 0 12px;
+    color: #F4F4F4;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.contact .more-info h4 {
+    font-size: 20px;
+    color: #F4F4F4;
+}
+
+.contact .more-info ul {
+    display: flex;
+    gap: 16px;
+    padding: 8px 0 0 12px;
+
+}
+
+/* .contact-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -463,4 +503,4 @@ body {
 .contact h4 {
     text-align: center;
     font-size: 20px;
-}
+} */
