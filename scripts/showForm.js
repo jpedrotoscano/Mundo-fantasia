@@ -3,7 +3,7 @@ const closeFormBtn = document.querySelector("#sub-form")
 const modal = document.querySelector("#form-container")
 
 showFormBtn.onclick = () => {
-    modal.show()
+    modal.showModal()
     document.body.style.overflow = "hidden";
     document.body.style.height = "100%";
 }
