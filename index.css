@@ -13,6 +13,33 @@ body {
     background-color: #F4FAFA;
 }
 
+@keyframes mainAnim {
+    from {
+        opacity: 0;
+        translate: 0 -20vh;
+    }
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes mainAnimAlt {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes secAnim {
+    from {
+        opacity: 0;
+        translate: -20vw 0;
+    }
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
 .header {
     width: 100vw;
 }
@@ -43,7 +70,7 @@ body {
 .slider-wrapper {
     position: relative;
     width: 100%;
-    margin: auto;
+    margin-bottom: 100px;
     overflow: hidden;
 }
 
@@ -55,6 +82,10 @@ body {
 .sport-slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
+}
+
+.sport-slider.in-view {
+    animation: mainAnimAlt 3s ease;
 }
 
 .slide {
@@ -100,11 +131,20 @@ body {
     background-color: #044E96;
 }
 
+#sport-1.in-view {
+    animation: mainAnimAlt 3.5s ease;
+}
+
+#sport-2.in-view {
+    animation: mainAnimAlt 5s ease;
+}
+
 .open-form-btn {
     position: absolute;
-    top: 83%;
     left: 50%;
+    top: 80%;
     transform: translate(-50%, -50%);
+    z-index: 10;
     padding: 16px 40px;
     font-weight: 600;
     border-radius: 10px;
@@ -131,14 +171,17 @@ body {
     font-weight: 600;
     gap: 16px;
     position: relative;
+    margin-bottom: 100px;
 }
-
-
 
 .segments h2 {
     font-size: 40px;
     color: #044E96;
     letter-spacing: 4px;
+}
+
+.segments h2.in-view {
+    animation: mainAnim 3s ease;
 }
 
 .segments-wrapper {
@@ -160,11 +203,19 @@ body {
     height: auto;
 }
 
+.segment img.in-view {
+    animation: mainAnim 2.5s ease;
+}
+
 .segment h3 {
     text-align: center;
     color: #044E96;
     font-size: 20px;
     font-weight: 600;
+}
+
+.segment h3.in-view {
+    animation: mainAnim 2s ease;
 }
 
 .form-container {
@@ -310,11 +361,19 @@ body {
     border-radius: 10px;
 }
 
+.mission-img.in-view {
+    animation: mainAnim 2s ease;
+}
+
 .mission-wrapper h3 {
     text-align: center;
     color: #044E96;
     font-size: 40px;
     font-weight: 600;
+}
+
+.mission-wrapper h3.in-view {
+    animation: secAnim 2.5s ease;
 }
 
 .mission-wrapper p {
@@ -324,10 +383,18 @@ body {
     color: #044E96;
 }
 
+.mission-wrapper p.in-view {
+    animation: secAnim 3s ease;
+}
+
 .mission-wrapper > span {
     font-size: 20px;
     font-weight: 600;
     color: #044E96;
+}
+
+.mission-wrapper > span.in-view {
+    animation: secAnim 3.5s ease;
 }
 
 .mission-wrapper div button {
@@ -341,6 +408,10 @@ body {
     border-radius: 6px;
     border: 3px solid #044E96;
     cursor: pointer;
+}
+
+.mission-wrapper div button.in-view {
+    animation: mainAnimAlt 6s ease;
 }
 
 .mission-wrapper button:hover
@@ -365,6 +436,10 @@ body {
     color: #044E96;
     text-align: center;
     margin-bottom: 22px;
+}
+
+.more-sports h2.in-view {
+    animation: mainAnim 2s ease;
 }
 
 .sports-container {
@@ -396,10 +471,34 @@ body {
     width: 150px;
 }
 
+.sport #swimming-img.in-view {
+    animation: mainAnimAlt 2s ease;
+}
+
+.sport #ballet-img.in-view {
+    animation: mainAnimAlt 4s ease;
+}
+
+.sport #soccer-img.in-view {
+    animation: mainAnimAlt 5s ease;
+}
+
 .sports-container .sport h3 {
     font-size: 20px;
     font-weight: 600;
     color: #044E96;
+}
+
+.sport #swimming-title.in-view {
+    animation: mainAnimAlt 2s ease;
+}
+
+.sport #ballet-title.in-view {
+    animation: mainAnimAlt 4s ease;
+}
+
+.sport #soccer-title.in-view {
+    animation: mainAnimAlt 5s ease;
 }
 
 .sport-over {
@@ -414,6 +513,18 @@ body {
     padding: 12px;
     background: #044E96;
     border-radius: 15px;
+}
+
+.sport #swimming.in-view {
+    animation: mainAnimAlt 2s ease;
+}
+
+.sport #ballet.in-view {
+    animation: mainAnimAlt 4s ease;
+}
+
+.sport #soccer.in-view {
+    animation: mainAnimAlt 5s ease;
 }
 
 .sport .btn-more > p {
@@ -440,11 +551,19 @@ body {
     color: #044E96;
 }
 
+.social-section h2.in-view {
+    animation: mainAnim 4s ease;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: space-around;
     gap: 60px;
+}
+
+.grid.in-view {
+    animation: mainAnim 3s ease;
 }
 
 .address {
@@ -459,6 +578,10 @@ body {
     font-size: 40px;
     color: #044E96;
     text-align: center;
+}
+
+.address h2.in-view {
+    animation: mainAnim 2s ease;
 }
 
 .address .address-wrapper {
@@ -482,9 +605,18 @@ body {
     margin-bottom: 20px
 }
 
+.address-card h3.in-view {
+    animation: secAnim 2.5s ease;
+}
+
 .address-card img {
     width: 400px;
     margin-bottom: 10px;
+}
+
+.address-card img.in-view {
+    animation: secAnim 3s ease;
+
 }
 
 .address-card span {
@@ -494,10 +626,19 @@ body {
     color: #044E96;
 }
 
+.address-card span.in-view {
+    animation: secAnim 3.5s ease;
+
+}
+
 .address-card p {
     font-size: 18px;
     font-weight: 400;
     color: #044E96;
+}
+
+.address-card p.in-view {
+    animation: secAnim 4s ease;
 }
 
 .visible {
