@@ -1,8 +1,15 @@
-const showFormBtn = document.querySelector("#show-form")
+const showFormBtn1 = document.querySelector("#show-form")
+const showFormBtn2 = document.querySelector("#show-form-2")
 const closeFormBtn = document.querySelector("#sub-form")
 const modal = document.querySelector("#form-container")
 
-showFormBtn.onclick = () => {
+showFormBtn1.onclick = () => {
+    modal.showModal()
+    document.body.style.overflow = "hidden";
+    document.body.style.height = "100%";
+}
+
+showFormBtn2.onclick = () => {
     modal.showModal()
     document.body.style.overflow = "hidden";
     document.body.style.height = "100%";
